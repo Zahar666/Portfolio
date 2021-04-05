@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  /* background: url(Assets/back.jpg) no-repeat center center fixed;  */
+  /* -webkit-background-size: cover; */
+  /* -moz-background-size: cover; */
+  /* -o-background-size: cover; */
+  /* background-size: cover; */
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+}
+/*--------------------------------------------------------reset css----------------------------------------------*/
+.header {
+  position: sticky;
+  top: 0;
+}
+.wrapper {
+  background-color: white;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0.5% 5%;
+
+  /* border-bottom: solid 1px rgb(112, 156, 158); */
+  /* border-radius: 20px; */
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  background-image: url(assets/mylogo.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px black;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+
+  box-shadow: 10px 0px 10px rgb(83, 82, 82);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+}
+
+.item__list {
+  font-family: 'Cinzel';
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  margin-right: 20px;
+  border: solid 10px white;
+  background: white;
+  border-radius: 5px;
+
+  transition: 1s;
+}
+
+.item__list:hover {
+  color: white;
+  border: solid 10px rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+
+.list:last-child {
+  margin-right: 0px;
+}
+/* ---------------------------------------------------------------------------------- */
+
+
+.about__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__pick {
+  width: 30%;
+}
+.photo {
+  border-radius: 20px;
+}
+
+.content__text {
+  color: white;
+  width: 40%;
+}
+
+.about .wrapper {
+  background-color: black;
+  padding: 10%;
+}
+
+.photo {
+  width: 100%;
+}
+
+.cvbutton {
+  margin-top: 80%;
+  width: 30%;
+
+
+  text-align: center;
+  font-family: 'Cinzel';
+  font-size: 20px;
+  color: white;
+  border: solid 10px rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+
+  transition: 1s;
+}
+
+.cvbutton:hover {
+  color: black;
+  border: solid 10px white;
+  background: white;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+/* ------------------------------------------------------------------------------------- */
+
+
+.skills__title {
+  font-family: 'Cinzel';
+  font-size: 30px;
+  margin: 0 auto;
+  padding-bottom: 3%;
+}
+
+.skills .wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.skills__content {
+  margin: 0 auto;
+}
+
+ul {
+  font-size: 25px;
+  list-style: outside;
+}
+
+.skills__list li {
+  margin-top: 10%;
+}
+.skills__list li:first-child {
+  margin-top: 0;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+.projects .wrapper {
+  padding: 5% 0;
+  background-color: black;
+}
+
+.project__title {
+  width: 20%;
+  margin: 0 auto;
+  color: white;
+}
+
+.title__text { 
+  font-family: 'Cinzel';
+  font-size: 30px;
+  text-align: center;
+}
+
+.kb {
+  background: url(assets/kb.png);
+}
+
+.appdog {
+  background: url(assets/dog-app.png);
+}
+
+.forkids {
+  background: url(assets/forkids.png);
+}
+
+.covid {
+  background: url(assets/covid.png);
+}
+
+.game {
+  background: url(assets/game.png);
+}
+
+.proj {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 450px;
+  height: 250px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+.line {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+
+  min-height: 45%;
+}
+
+.info,
+.info__button {
+  height: 25px;
+  text-align: center;
+  opacity: 0;
+  text-align: center;
+  border: solid 4px rgba(255, 255, 255, 0);
+  border-radius: 5px;
+
+  color: rgb(0, 0, 0);
+  margin: 0 auto;
+}
+.info__button:hover { 
+  border: solid 4px rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+  color: white;
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+.footer {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__link {
+  display: flex;
+}
+
+
+.soc {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+
+  transition: 1s;
+}
+
+.soc:hover {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.mail, .phone, .telegrame, .facebook, .github, .linkedin {
+  margin-left: 10%;
+
+}
+
+h6 {
+  font-style: italic;
+}
