@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Spartan:wght@100;200;300;500;600;700;800;900&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -84,13 +84,13 @@ button {
 }
 
 .logo {
-  background-image: url(assets/mylogo.jfif);
+  background-image: url(/Assets/mylogo.jfif);
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 1px black;
   border-radius: 100%;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 
   box-shadow: 10px 0px 10px rgb(83, 82, 82);
 }
@@ -157,8 +157,21 @@ button {
   width: 100%;
 }
 
+.me {
+  font-family: 'Cinzel';
+  font-size: 25px;
+}
+
+.me__content {
+  color: rgb(207, 207, 207);
+  margin-top: 20%;
+  font-family: 'Spartan';
+  font-weight: 300;
+  text-align: justify;
+  line-height: 1.4em;
+}
+
 .cvbutton {
-  margin-top: 80%;
   width: 30%;
 
 
@@ -180,6 +193,27 @@ button {
   border-radius: 5px;
 
   cursor: pointer;
+}
+
+.certificate {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: underline;
+
+  transition: .5;
+}
+
+.certificate:hover {
+  color: rgb(161, 161, 161);
+}
+
+.sub__content {
+  margin: 0 auto;
+  margin-top: 60%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 /* ------------------------------------------------------------------------------------- */
 
@@ -207,6 +241,7 @@ ul {
 }
 
 .skills__list li {
+  font-family: 'Spartan';
   margin-top: 10%;
 }
 .skills__list li:first-child {
@@ -233,23 +268,23 @@ ul {
 }
 
 .kb {
-  background: url(assets/kb.png);
+  background: url(/assets/kb.png);
 }
 
 .appdog {
-  background: url(assets/dog-app.png);
+  background: url(/assets/dog-app.png);
 }
 
 .forkids {
-  background: url(assets/forkids.png);
+  background: url(/assets/forkids.png);
 }
 
 .covid {
-  background: url(assets/covid.png);
+  background: url(/assets/covid.png);
 }
 
 .game {
-  background: url(assets/game.png);
+  background: url(/assets/game.png);
 }
 
 .proj {
@@ -270,11 +305,27 @@ ul {
   justify-content: space-around;
   margin-top: 5%;
 
-  min-height: 45%;
+  height: 250px;
+}
+
+.proj__skills {
+  font-family: 'Spartan';
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.2em;
+  margin-top: 3%;
+  font-weight: 500;
+}
+
+.prj__name {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .info,
 .info__button {
+  width: 90%;
+  font-family: 'Cinzel';
   height: 25px;
   text-align: center;
   opacity: 0;
@@ -284,6 +335,7 @@ ul {
 
   color: rgb(0, 0, 0);
   margin: 0 auto;
+  transition: .2;
 }
 .info__button:hover { 
   border: solid 4px rgb(0, 0, 0);
@@ -291,7 +343,12 @@ ul {
   border-radius: 5px;
   color: white;
 }
-
+.info__button {
+  width: 30%;
+  font-weight: 500;
+  padding: 0.5% 0;
+  font-size: 14px;
+}
 
 /* ---------------------------------------------------------------------------------------- */
 .footer {
@@ -305,7 +362,8 @@ ul {
   align-items: center;
 }
 
-.contacts__link {
+.footer__subtitle {
+  margin-top: 5%;
   display: flex;
 }
 
@@ -323,9 +381,14 @@ ul {
   transform: rotate(360deg);
 }
 
-.mail, .phone, .telegrame, .facebook, .github, .linkedin {
+.mail, .phone, .telegrame, .github {
   margin-left: 10%;
 
+}
+
+.footer__title {
+  font-family: 'Cinzel';
+  font-weight: 500;
 }
 
 h6 {

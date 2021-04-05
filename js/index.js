@@ -15,8 +15,8 @@ class Event {
   eventChangeOver (e) {
     e.currentTarget.style.background = 'no-repeat url("assets/white.png")';
     e.currentTarget.style.backgroundSize = 'contain';
-    e.currentTarget.style.width = '350px';
-    e.currentTarget.style.height = '180px';
+    e.currentTarget.style.width = '400px';
+    e.currentTarget.style.height = '200px';
     e.currentTarget.style.transitionDuration = '.5s';
     for (let i = 0; i < e.currentTarget.children.length; i++) {
       e.currentTarget.children[i].style.transitionDuration = '1s';
