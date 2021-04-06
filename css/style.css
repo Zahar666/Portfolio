@@ -84,7 +84,7 @@ button {
 }
 
 .logo {
-  background-image: url(/Assets/mylogo.jfif);
+  background-image: url(../assets/mylogo.jfif);
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 1px black;
@@ -268,23 +268,23 @@ ul {
 }
 
 .kb {
-  background: url(/assets/kb.png);
+  background: url(../assets/kb.png);
 }
 
 .appdog {
-  background: url(/assets/dog-app.png);
+  background: url(../assets/dog-app.png);
 }
 
 .forkids {
-  background: url(/assets/forkids.png);
+  background: url(../assets/forkids.png);
 }
 
 .covid {
-  background: url(/assets/covid.png);
+  background: url(../assets/covid.png);
 }
 
 .game {
-  background: url(/assets/game.png);
+  background: url(../assets/game.png);
 }
 
 .proj {
