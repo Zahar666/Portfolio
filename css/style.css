@@ -46,11 +46,6 @@ table {
 
 html {
   box-sizing: border-box;
-  /* background: url(Assets/back.jpg) no-repeat center center fixed;  */
-  /* -webkit-background-size: cover; */
-  /* -moz-background-size: cover; */
-  /* -o-background-size: cover; */
-  /* background-size: cover; */
 }
 *,
 *::before,
@@ -74,9 +69,6 @@ button {
   margin: 0 auto;
   width: 100%;
   padding: 0.5% 5%;
-
-  /* border-bottom: solid 1px rgb(112, 156, 158); */
-  /* border-radius: 20px; */
 }
 .main {
   display: flex;
@@ -96,6 +88,7 @@ button {
 }
 
 .nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,7 +102,7 @@ button {
   font-family: 'Cinzel';
   font-size: 25px;
   color: rgb(0, 0, 0);
-  margin-right: 20px;
+  margin-right: 10px;
   border: solid 10px white;
   background: white;
   border-radius: 5px;
@@ -130,6 +123,8 @@ button {
 }
 /* ---------------------------------------------------------------------------------- */
 
+
+/* ------------------------------------------------------------------------------------ */
 
 .about__content {
   display: flex;
@@ -249,106 +244,67 @@ ul {
 }
 
 /* ---------------------------------------------------------------------------------------- */
-
 .projects .wrapper {
+  background: black;
   padding: 5% 0;
-  background-color: black;
 }
 
 .project__title {
-  width: 20%;
-  margin: 0 auto;
+  font-size: 25px;
   color: white;
-}
-
-.title__text { 
-  font-family: 'Cinzel';
-  font-size: 30px;
+  width: 100%;
   text-align: center;
-}
-
-.kb {
-  background: url(../assets/kb.png);
-}
-
-.appdog {
-  background: url(../assets/dog-app.png);
-}
-
-.forkids {
-  background: url(../assets/forkids.png);
-}
-
-.covid {
-  background: url(../assets/covid.png);
-}
-
-.game {
-  background: url(../assets/game.png);
-}
-
-.proj {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-
-  width: 450px;
-  height: 250px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-
-  cursor: pointer;
+  font-family:'Cinzel';
 }
 
 .line {
   display: flex;
-  justify-content: space-around;
+  width: 100%;
   margin-top: 5%;
-
-  height: 250px;
+  height: 200px;
 }
 
-.proj__skills {
-  font-family: 'Spartan';
-  width: 80%;
+.proj {
   margin: 0 auto;
-  line-height: 1.2em;
-  margin-top: 3%;
-  font-weight: 500;
-}
-
-.prj__name {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.info,
-.info__button {
-  width: 90%;
-  font-family: 'Cinzel';
-  height: 25px;
-  text-align: center;
-  opacity: 0;
-  text-align: center;
-  border: solid 4px rgba(255, 255, 255, 0);
-  border-radius: 5px;
-
-  color: rgb(0, 0, 0);
-  margin: 0 auto;
-  transition: .2;
-}
-.info__button:hover { 
-  border: solid 4px rgb(0, 0, 0);
-  background: rgb(0, 0, 0);
-  border-radius: 5px;
-  color: white;
-}
-.info__button {
   width: 30%;
-  font-weight: 500;
-  padding: 0.5% 0;
-  font-size: 14px;
+  height: 100%;
+
+  transition: .5s;
 }
+.proj:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+
+
+.kb {
+  background: url(../assets/kb.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.appdog {
+  background: url(../assets/dog-app.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.forkids {
+  background: url(../assets/forkids.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.covid {
+  background: url(../assets/covid.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.game {
+  background: url(../assets/game.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
 
 /* ---------------------------------------------------------------------------------------- */
 .footer {
@@ -393,4 +349,91 @@ ul {
 
 h6 {
   font-style: italic;
+}
+
+
+@media (max-width: 765px) {
+  .item__list {
+    font-size: 20px;
+    border-width: 3px;
+  }
+  .item__list:hover {
+    border-width: 3px;
+  }
+  .cvbutton {
+    width: 50%;
+    font-size: 17px;
+  }
+  ul {
+    font-size: 18px;
+  }
+  
+}
+
+@media (max-width: 650px) {
+  .logo {
+    display: none;
+  }
+
+  .cvbutton {
+    width: 50%;
+    font-size: 12px;
+  }
+  ul {
+    font-size: 15px;
+  }
+  .line {
+    flex-direction: column;
+  }
+  .proj {
+    margin-top: 2%;
+    background-position-x: center;
+  }
+  .me {
+    font-size: 20px;
+  }
+  .me__content {
+    font-size: 16;
+  }
+  .content__text { margin-left: 3%;
+    margin-top: 5%;
+    width: 90%;
+  }
+  .content__pick {
+    margin-top: 10%;
+  }
+  .about__content {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 570px) {
+  .item__list {
+    font-size: 15px;
+  }
+  .soc {
+    width: 20px;
+    height: 20px;
+  }
+  h6 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 570px) {
+  .footer .wrapper {
+    flex-direction: column;
+  }
+  h6 {
+    margin-top: 2%;
+  }
+  .item__list {
+    font-size: 12px;
+    text-align: center;
+  }
+  .skills__title, .project__title {
+    font-size: 20px;
+  }
 }
