@@ -76,7 +76,7 @@ button {
 }
 
 .logo {
-  background-image: url(../assets/mylogo.jfif);
+  background-image: url(/assets/mylogo.jfif);
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 1px black;
@@ -265,8 +265,11 @@ ul {
 }
 
 .proj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
-  width: 30%;
+  width: 20%;
   height: 100%;
 
   transition: .5s;
@@ -279,27 +282,27 @@ ul {
 
 
 .kb {
-  background: url(../assets/kb.png);
+  background: url(/assets/kb.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .appdog {
-  background: url(../assets/dog-app.png);
+  background: url(/assets/dog-app.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .forkids {
-  background: url(../assets/forkids.png);
+  background: url(/assets/forkids.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .covid {
-  background: url(../assets/covid.png);
+  background: url(/assets/covid.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .game {
-  background: url(../assets/game.png);
+  background: url(/assets/game.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -367,14 +370,15 @@ h6 {
   ul {
     font-size: 18px;
   }
-  
 }
 
 @media (max-width: 650px) {
   .logo {
     display: none;
   }
-
+  .proj {
+    width: 40%;
+  }
   .cvbutton {
     width: 50%;
     font-size: 12px;
