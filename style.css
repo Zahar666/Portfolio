@@ -71,7 +71,7 @@ button {
   flex-direction: column;
 }
 .logo {
-  background-image: url(assets/mylogo.jfif);
+  background-image: url(Assets/mylogo.jfif);
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 1px black;
@@ -231,27 +231,27 @@ ul {
   cursor: pointer;
 }
 .kb {
-  background: url(assets/kb.png);
+  background: url(Assets/kb.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .appdog {
-  background: url(assets/dog-app.png);
+  background: url(Assets/dog-app.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .forkids {
-  background: url(assets/forkids.png);
+  background: url(Assets/forkids.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .covid {
-  background: url(assets/covid.png);
+  background: url(Assets/covid.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .game {
-  background: url(assets/game.png);
+  background: url(Assets/game.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
